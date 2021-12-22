@@ -77,6 +77,11 @@ class circle(OpenSCADObject):
         super().__init__('circle',
                          {'r': r, 'd': d, 'segments': segments})
 
+class render(OpenSCADObject):
+    def __init__(self) -> None:
+            super().__init__('render',
+                             {})
+
 
 class square(OpenSCADObject):
     """
