@@ -119,6 +119,9 @@ class OpenSCADObject:
         you really want scad_render(), 
         Calling obj._render won't include necessary 'use' or 'include' statements
         """
+
+        if self.name == 'code':
+            return "\n"+self.params['code']
         # First, render all children
         s = ""
         for child in self.children:
