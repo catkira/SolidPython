@@ -77,14 +77,6 @@ class circle(OpenSCADObject):
         super().__init__('circle',
                          {'r': r, 'd': d, 'segments': segments})
 
-class render(OpenSCADObject):
-    """
-    Inserts 'render()(...)' into the SCAD code
-    """
-    def __init__(self) -> None:
-            super().__init__('render',
-                             {})
-
 class code(OpenSCADObject):
     """
     Inserts raw code
